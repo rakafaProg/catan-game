@@ -30,7 +30,7 @@
     function getHTML() {
         return '
         <img src="'.$this->icon.'"'
-        //.' height="'.$this->size['height'].'" width="'.$this->size['width'].'"'
+        .' height="'.$this->size['height'].'" width="'.$this->size['width'].'"'
         .' />';
     }
 

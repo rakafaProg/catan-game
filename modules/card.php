@@ -16,7 +16,7 @@
     function getHtml() {
       return
       '
-
+      <div class="column">
         <div class="ui fluid card">
           <div class="image">
             '.parent::getHtml().'
@@ -25,7 +25,7 @@
             <a class="header">'.$this->name.'</a>
           </div>
         </div>
-        
+        </div>
       ';
     }
 

@@ -6,11 +6,13 @@
 
     function getCards() {
         $cardsArray = [];
-        foreach ($GLOBALS['cardsDataDemo'] as $card) {
-            array_push($cardsArray, new Card($card));
+        foreach ($GLOBALS['cardsDataDemo'] as $name => $card) {
+            $cardsArray[$name] = new Card($card);
         }
 
-        foreach ($cardsArray as $card) {
+        return $cardsArray;
+        foreach ($cardsArray as $name => $card) {
+          echo 'Name: ' . $name;
           echo $card->getHtml();
         }
     }

@@ -2,6 +2,12 @@
   require_once "./controllers/files-include.php";
   $dataHandler = new BLL();
 
+  if (isset($_GET['func'])) {
+    AI::run($_GET);
+  } else {
+    AI::init();
+  }
+
  ?>
 
 
@@ -24,6 +30,22 @@
   </div>
 </div>
 
+<style>
+  .blue-bg {
+    background-color: lightblue !important;
+  }
 
+  .green-bg {
+    background-color: lightgreen !important;
+  }
+
+  .yellow-bg {
+    background-color: yellow !important;
+  }
+
+  .pink-bg {
+    background-color: lightpink !important;
+  }
+</style>
 
 </body>

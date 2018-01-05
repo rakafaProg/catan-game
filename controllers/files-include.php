@@ -19,5 +19,6 @@
     include_once 'modules/game-board.php';
 
     include_once 'data/bll.php';
+    include_once 'controllers/ai.php';
 
  ?>
