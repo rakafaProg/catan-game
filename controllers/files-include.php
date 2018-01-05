@@ -18,4 +18,6 @@
     include_once 'modules/player.php';
     include_once 'modules/game-board.php';
 
+    include_once 'data/bll.php';
+
  ?>
