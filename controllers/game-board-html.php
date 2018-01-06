@@ -16,8 +16,8 @@
  <div class="ui grid">
 
    <!-- Board -->
-   <div class="orange ten wide column">
-     Board
+   <div class="teal ten wide column">
+     <h2 class="header">Board:</h2>
    </div>
    <!-- End of board -->
 
@@ -34,11 +34,13 @@
           <!-- Resorces: -->
           <div class="ui two column grid">
           <?php foreach ($player->getResorces() as $name => $amount) {
-            if ($amount > 0) { ?>
+            if ($amount > 0) {
+              $resorce = AI::$resorcesCards[$name]; ?>
             <div class="ui column"><div class="ui fluid card">
                 <div class="content">
-                  <img class="right floated small ui image" src="<?= AI::$resorcesCards[$name]->getIcon() ?>">
-                  <a class="header"><?= $name ?> X <?= $amount ?></a>
+                  <div class="floating ui <?= $resorce->getColor() ?> circular label"><?= $amount ?></div>
+                  <img class="right floated small ui image" src="<?= $resorce->getIcon() ?>">
+                  <a class="ui <?= $resorce->getColor() ?> right ribbon label"><?= $resorce->getName() ?></a>
                 </div>
             </div></div>
           <?php } } ?>

@@ -35,6 +35,8 @@
       $players[1]->getResorce('brick', 1);
       $players[0]->getResorce('wool', 1);
       $players[2]->getResorce('ore', 1);
+      $players[1]->getResorce('grain', 1);
+      $players[2]->getResorce('brick', 1);
 
       foreach ($players as $player) {
         //echo $player->getHtml();

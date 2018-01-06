@@ -23,29 +23,7 @@
 </head>
 
 <body>
-<div class="ui seven column grid">
-  <div class="column">
-    <?php $dataHandler->getCards(); ?>
-
-  </div>
-</div>
-
-<style>
-  .blue-bg {
-    background-color: lightblue !important;
-  }
-
-  .green-bg {
-    background-color: lightgreen !important;
-  }
-
-  .yellow-bg {
-    background-color: yellow !important;
-  }
-
-  .pink-bg {
-    background-color: lightpink !important;
-  }
-</style>
 
 </body>
+
+</html>
