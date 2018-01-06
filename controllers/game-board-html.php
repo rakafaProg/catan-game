@@ -18,6 +18,16 @@
    <!-- Board -->
    <div class="teal ten wide column">
      <h2 class="header">Board:</h2>
+     <div class="ui cards">
+       <?php
+
+         $myBoard = new GameBoard('');
+         $myBoard->createBoard($GLOBALS['boardPiecesData']);
+
+
+       ?>
+     </div>
+
    </div>
    <!-- End of board -->
 
