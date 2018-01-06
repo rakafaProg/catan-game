@@ -13,22 +13,7 @@
       $this->type = $params['type'];
     }
 
-    function getHtml() {
-      return
-      '
-      <div class="column">
-        <div class="ui fluid card">
-          <div class="image">
-            '.parent::getHtml().'
-          </div>
-          <div class="content">
-            <a class="header">'.$this->name.'</a>
-          </div>
-        </div>
-        </div>
-      ';
-    }
-
+    
   }
 
 

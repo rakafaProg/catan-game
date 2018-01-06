@@ -3,7 +3,7 @@
   /**
    * Any part in the game
    */
-  class Part implements IPartView {
+  class Part  {
     private $icon;
     private $size;
     private $position;
@@ -25,6 +25,10 @@
         else
           $this->position = ['top'=>'0', 'left'=>'0'];
 
+    }
+
+    function getIcon () {
+      return $this->icon;
     }
 
     function getHTML() {
