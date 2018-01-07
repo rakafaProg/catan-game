@@ -16,11 +16,11 @@
     }
   }
 
-  createBoardData('Field', 'grain', 'yellow', 4, 'icon');
-  createBoardData('Forest', 'lumber', 'brown', 4, 'icon');
-  createBoardData('Hill', 'brick', 'orange', 3, 'icon');
-  createBoardData('Pasture', 'wool', 'olive', 4, 'icon');
-  createBoardData('Mountain', 'ore', 'grey', 3, 'icon');
+  createBoardData('Field', 'grain', 'yellow', 4, 'assets/icons/board/field.png');
+  createBoardData('Forest', 'lumber', 'brown', 4, 'assets/icons/board/forest.png');
+  createBoardData('Hill', 'brick', 'orange', 3, 'assets/icons/board/hill.png');
+  createBoardData('Pasture', 'wool', 'olive', 4, 'assets/icons/board/pasture.png');
+  createBoardData('Mountain', 'ore', 'grey', 3, 'assets/icons/board/mountain.png');
 
 
  ?>

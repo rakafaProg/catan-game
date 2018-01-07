@@ -23,7 +23,7 @@
         <div class="card '.$this->color.'">
         <div class="content">
           <h2 class="header">
-            Number: '.$this->number.'
+            Number: '.$this->number.'. Index: '.$this->index.'
           </h2>
           <h3 class="meta">Name: '.$this->name.'</h3>
           </div>
@@ -35,6 +35,9 @@
       $this->number = $number;
     }
 
+    function setIndex ($number) {
+      $this->index = $number;
+    }
   }
 
 
