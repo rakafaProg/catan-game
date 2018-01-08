@@ -22,5 +22,6 @@
   createBoardData('Pasture', 'wool', 'olive', 4, 'assets/icons/board/pasture.png');
   createBoardData('Mountain', 'ore', 'grey', 3, 'assets/icons/board/mountain.png');
 
+  var_dump($boardPiecesData);
 
  ?>

@@ -18,39 +18,35 @@
    <!-- Board -->
    <div class="teal ten wide column">
      <h2 class="header">Board:</h2>
-
      <div class="board-container">
+     <?php
+      
+         $myBoard = new GameBoard('');
+         $htmlView = $myBoard->createBoard($GLOBALS['boardPiecesData']);
+         
+
+       ?>
+
         <div class="first-row">
-          <div class="board-part hill" ></div>
-          <div class="board-part field" ></div>
-          <div class="board-part mountain" ></div>
+            <?php  for ($i=0; $i < 3; $i++)  echo $htmlView[$i];  ?>
         </div>
         <div class="second-row">
-          <div class="board-part forest" ></div>
-          <div class="board-part hill" ></div>
-          <div class="board-part mountain" ></div>
-          <div class="board-part pasture" ></div>
+            <?php  for ($i=3; $i < 7; $i++)  echo $htmlView[$i];  ?>
         </div>
         <div class="third-row">
-          <div class="board-part mountain" ></div>
-          <div class="board-part pasture" ></div>
-          <div class="board-part desert" ></div>
-          <div class="board-part forest" ></div>
-          <div class="board-part mountain" ></div>
+            <?php  for ($i=7; $i < 12; $i++)  echo $htmlView[$i];  ?>
         </div>
         <div class="forth-row">
-          <div class="board-part hill" ></div>
-          <div class="board-part mountain" ></div>
-          <div class="board-part field" ></div>
-          <div class="board-part forest" ></div>
+            <?php  for ($i=12; $i < 16; $i++)  echo $htmlView[$i];  ?>
         </div>
         <div class="fifth-row">
-          <div class="board-part forest" ></div>
-          <div class="board-part pasture" ></div>
-          <div class="board-part field" ></div>
+            <?php  for ($i=16; $i < 19; $i++)  echo $htmlView[$i];  ?>
         </div>
+</div>
+     <!--<div class="board-container">
+        
      </div>
-
+-->
      <style>
       .board-container {
         position: relative;
@@ -62,6 +58,9 @@
         float: left;
         width: 87px;
         height: 112px;
+        padding: 30px;
+        font-size: 20px;
+        
       }
       .break-line {
         float: none;
@@ -124,13 +123,7 @@
      </style>
 
      <div class="ui cards">
-       <?php
-
-         $myBoard = new GameBoard('');
-         $myBoard->createBoard($GLOBALS['boardPiecesData']);
-
-
-       ?>
+       
      </div>
 
    </div>
