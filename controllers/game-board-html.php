@@ -58,9 +58,9 @@
         float: left;
         width: 87px;
         height: 112px;
-        padding: 30px;
+        padding-top: 30px;
         font-size: 20px;
-        
+        text-align: center;
       }
       .break-line {
         float: none;
