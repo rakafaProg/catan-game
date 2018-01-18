@@ -1,4 +1,5 @@
 <?php
+  session_start();
   require_once "./controllers/files-include.php";
   $dataHandler = new BLL();
 
@@ -7,6 +8,9 @@
   } else {
     AI::init();
   }
+
+  $gameAI = new GameAI();
+  var_dump($_SESSION);
 
 
  ?>

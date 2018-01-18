@@ -48,6 +48,10 @@
      </div>
 -->
      <style>
+     .cube {
+       width: 50px;
+       height: 50px;
+     }
       .board-container {
         position: relative;
         width: 500px;

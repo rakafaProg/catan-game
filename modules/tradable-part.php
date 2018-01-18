@@ -6,7 +6,7 @@
      * and to exist will have to be own by a player.
      */
     class TradablePart extends Part {
-      $price;
+      private $price;
       function __construct($params) {
         # code...
       }

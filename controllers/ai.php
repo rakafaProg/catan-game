@@ -5,6 +5,7 @@
    */
   class AI
   {
+    static private $cubes;
     static public $resorcesCards;
 
     static function run($params) {
@@ -12,7 +13,9 @@
     }
 
     static function init() {
-
+      
+      self::$cubes = new Cube('');
+      self::$cubes->getView();
       $colors = ['blue', 'pink', 'green', 'yellow'];
       $dataHandler = new BLL();
 
@@ -58,6 +61,42 @@
   }
 
     //initBoard('x');
+
+    class GameAI {
+        private $cubes;
+        private $players;
+        private $board;
+
+        function __construct() {
+            if (isset($_SESSION['game'])) {
+                //$this = $_SESSION['game'];
+            } else {
+              $this->init(new );
+              $this->updateSession();
+            }
+        }
+
+        private function init($cubes, $players, $board) {
+
+        }
+
+        function updateSession () {
+          var_dump($this);
+        }
+
+        function getCubes() {
+          return $this->cubes;
+        }
+
+        function getPlayers () {
+          return $this->players;
+        }
+
+        function getBoard() {
+          return $this->board;
+        }
+    }
+
 
 
  ?>
